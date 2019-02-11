@@ -1,0 +1,47 @@
+﻿@model WCFCRUDJson_Client.Viewmodels.UserViewModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Edit</title>
+</head>
+<body>
+    @using (Html.BeginForm("Edit", "User"))
+    {
+    <table cellpadding="2" cellspacing="2">
+        <tr>
+            <td>@Html.LabelFor(item => item.user.id)</td>
+            <td>
+                @Html.ValueFor(item => item.user.id)
+                @Html.HiddenFor(item => item.user.id)
+            </td>
+        </tr>
+        <tr>
+            <td>@Html.LabelFor(item => item.user.firstname)</td>
+            <td>@Html.TextBoxFor(item => item.user.firstname)</td>
+        </tr>
+        <tr>
+            <td>@Html.LabelFor(item => item.user.lastname)</td>
+            <td>@Html.TextBoxFor(item => item.user.lastname)</td>
+        </tr>
+        <tr>
+            <td>@Html.LabelFor(item => item.user.email)</td>
+            <td>@Html.TextBoxFor(item => item.user.email)</td>
+        </tr>
+        <tr>
+            <td>@Html.LabelFor(item => item.user.password)</td>
+            <td>@Html.TextBoxFor(item => item.user.password)</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td><input type="submit" value="Save" /></td>
+        </tr>
+    </table>
+    }
+</body>
+</html>

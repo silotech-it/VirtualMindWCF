@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.271
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCFCRUD", "WCFCRUD\WCFCRUD.csproj", "{5D50D780-14DA-4CC5-9D3B-6A2CF9561548}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCFCRUDJson_Client", "WCFCRUDJson_Client\WCFCRUDJson_Client.csproj", "{F6B70B8E-8A56-4B1C-94C7-FCDF1B818D47}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5D50D780-14DA-4CC5-9D3B-6A2CF9561548}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D50D780-14DA-4CC5-9D3B-6A2CF9561548}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D50D780-14DA-4CC5-9D3B-6A2CF9561548}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D50D780-14DA-4CC5-9D3B-6A2CF9561548}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6B70B8E-8A56-4B1C-94C7-FCDF1B818D47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6B70B8E-8A56-4B1C-94C7-FCDF1B818D47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6B70B8E-8A56-4B1C-94C7-FCDF1B818D47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6B70B8E-8A56-4B1C-94C7-FCDF1B818D47}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D09C956F-222D-4C1D-B28C-B22612B6623C}
+	EndGlobalSection
+EndGlobal

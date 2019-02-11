@@ -1,0 +1,40 @@
+﻿@model List<WCFCRUDJson_Client.Models.User>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <a href="@Url.Action("Create","User")">Add New User</a>
+    <br /><br />
+    <table cellpadding="2" cellspacing="2" border="1">
+        <tr>
+            <th>Id</th>
+            <th>Fistname</th>
+            <th>Lastname</th>
+            <th>E-mail</th>
+            <th>Password</th>
+            <th>option</th>
+            <th>option</th>
+        </tr>
+        @foreach (var item in Model)
+        {
+        <tr>
+            <td>@item.id</td>
+            <td>@item.firstname</td>
+            <td>@item.lastname</td>
+            <td>@item.email</td>
+            <td>@item.password</td>
+            <td><a href="@Url.Action("Delete", "User", new { id = item.id })">Delete</a></td>
+            <td><a href="@Url.Action("Edit", "User", new { id = item.id })">Edit</a></td>
+        </tr>
+        }
+    </table>
+</body>
+</html>
